@@ -1,0 +1,280 @@
+/* CSS Reset  */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Pacifico', cursive;
+}
+
+/* CSS Variables  */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar : Logo and Image  */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    width: 67px;
+    height: 73px;
+}
+
+/* Navigation Bar : List Styling  */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* background-color: white;  */
+    list-style: none;
+    font-size: 1.3em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 3px;
+    margin: 3px 3px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/wallpaper3.jpg') center center/cover;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    font-size: 2.8rem;
+    padding: 19px 2px;
+    margin: 14px 2px;
+}
+
+#home p{
+    font-size: 1.3rem;
+    margin: 6px 2px;
+    padding: 2px 2px;
+}
+
+#home button{
+    width: 164px;
+    height: 61px;
+    border: black solid 2px;
+    border-radius: 35px;
+    background-color: #3e3d3a;
+    color: white;
+    font-size: 1.5rem;
+    margin: 18px 2px;
+    padding: 2px 2px;
+    cursor: pointer;
+}
+
+#home button :hover{
+    color: black;
+    background-color:wheat;
+
+}
+
+/* Services Section  */
+.services{
+    display: flex;
+    flex-direction: row;
+    margin: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+#services-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.services .box{
+    border: red solid 2px;
+    width:100vw;
+    height: 70vh;
+    margin: 2px 20px;
+    padding: 23px 10px 0px 10px;
+    height: 2px 2px;
+    border-radius: 50px;
+    background-color: rgb(184, 179, 179);
+}
+
+.services .box h2{
+    font-size: rem2;
+}
+
+.services .box p{
+    font-size: 1rem;
+}
+
+.services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+/* Clients Section  */
+#client-section{
+    height: 600px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../img/clients\ background.jpg');
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client-section h1{
+    margin: 2px 2px;
+    padding: 60px 2px;
+    z-index: -1;
+    opacity: 1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items img{
+    width: 120px;
+    height: 120px;
+    padding:20px;
+}
+
+
+/* Contact Section  */
+#contact{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    background-image: url('../img/contact\ wallpaper.jpg');
+    width: 100%;
+    height: 80vh;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.contactformitem label{
+    display: block;  
+}
+
+.contactformitem input{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.contactformitem textarea{
+    width: 300px;
+    border: 5px sold black;
+    border-radius: 20px;
+
+}
+
+
+
+/* Footer */
+footer{
+    margin: 40px 0px;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: black;
+    color: cornsilk;
+}
+
+/* Utility Classes  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 19px 2px;
+    margin: 14px 2px;
+}
+
+.center{
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 19px 2px;
+    margin: 14px 2px;
+}
